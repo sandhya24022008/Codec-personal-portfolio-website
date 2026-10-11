@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio website">
+  <title>Portfolio | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">portfolio<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a class="nav-contact" href="#contact">Contact ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</p>
+        <h1>Hi, I'm <span id="hero-name">Your Name</span>.<br>I build things with <span class="accent">data & code.</span></h1>
+        <p id="hero-headline" class="hero-subtitle">Aspiring Data Analyst | AI & Data Science Student</p>
+        <p class="hero-description">I like solving real problems, learning new technologies, and turning ideas into useful projects.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↘</span></a><a class="text-link" href="#contact">Let's connect ↗</a></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative portfolio graphic">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="code-card"><div class="card-top"><span></span><span></span><span></span><small>hello.py</small></div><pre><span class="code-purple">def</span> <span class="code-blue">keep_building</span>():
+    curiosity = <span class="code-green">"always"</span>
+    skills = [<span class="code-green">"data"</span>, <span class="code-green">"AI"</span>, <span class="code-green">"code"</span>]
+    <span class="code-purple">return</span> curiosity, skills
+
+<span class="code-comment"># learn. build. repeat.</span></pre></div>
+        <div class="floating-chip chip-top">✳ Curious mind</div><div class="floating-chip chip-bottom">{" "}01 / Always learning</div>
+      </div>
+    </section>
+    <section id="about" class="section-wrap section-block">
+      <p class="eyebrow">01 — A LITTLE ABOUT ME</p><h2>Curiosity first.<br><span class="muted">Progress every day.</span></h2>
+      <div class="about-grid"><p id="about-text">I enjoy exploring technology and building projects that help me learn by doing. My current focus is data analysis, Python, and web development.</p><div class="about-facts"><div><strong id="location">India</strong><span>Based in</span></div><div><strong>AI & Data Science</strong><span>Learning focus</span></div><div><strong>Hands-on</strong><span>Learning style</span></div></div></div>
+    </section>
+    <section id="skills" class="section-wrap section-block">
+      <p class="eyebrow">02 — MY TOOLKIT</p><h2>Skills I'm <span class="muted">growing.</span></h2><p class="section-intro">A snapshot of the tools and topics I practise.</p>
+      <div id="skills-grid" class="skills-grid"><div class="skill-card"><span>Python</span><div class="skill-track"><i style="width:75%"></i></div></div><div class="skill-card"><span>SQL</span><div class="skill-track"><i style="width:70%"></i></div></div><div class="skill-card"><span>Excel</span><div class="skill-track"><i style="width:75%"></i></div></div></div>
+    </section>
+    <section id="projects" class="section-wrap section-block">
+      <p class="eyebrow">03 — SELECTED WORK</p><h2>Ideas made <span class="muted">practical.</span></h2><p class="section-intro">Projects are where I turn concepts into something real.</p>
+      <div id="projects-grid" class="projects-grid"><article class="project-card"><div class="project-number">PROJECT / 01</div><h3>Data Redundancy Removal System</h3><p>A Python project concept focused on identifying and removing duplicate data.</p><div class="tags"><span>Python</span></div></article><article class="project-card"><div class="project-number">PROJECT / 02</div><h3>Detection Project</h3><p>A practical project demonstrating detection logic and clear results.</p><div class="tags"><span>Python</span></div></article><article class="project-card"><div class="project-number">PROJECT / 03</div><h3>Personal Portfolio Website</h3><p>A responsive place to showcase skills, projects, and contact details.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article></div>
+    </section>
+    <section id="contact" class="section-wrap section-block contact-section">
+      <div><p class="eyebrow">04 — SAY HELLO</p><h2>Have an idea?<br><span class="muted">Let's talk.</span></h2><p class="section-intro">For collaborations, opportunities, or a friendly hello, send a message.</p><a id="email-link" class="text-link" href="mailto:hello@example.com">hello@example.com ↗</a></div>
+      <form id="contact-form" class="contact-form"><label>Your name<input name="name" required maxlength="100" placeholder="Name"></label><label>Email address<input name="email" type="email" required placeholder="you@example.com"></label><label>Message<textarea name="message" required maxlength="3000" rows="4" placeholder="What would you like to talk about?"></textarea></label><button class="button button-primary" type="submit">Send message ↗</button><p id="form-status" role="status"></p></form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home">portfolio<span>.</span></a><p>Made with curiosity and a little bit of code.</p><span>© <span id="year"></span> Your Name</span></footer>
+  <script src="/js/app.js"></script>
+</body></html>
